@@ -10,14 +10,45 @@
     <title>Carousel</title>
 </head>
 <body>
-    <div class="main-carousel">
-        <div class="carousel-cell">slide1</div>
-        <div class="carousel-cell">slide2</div>
-        <div class="carousel-cell">slide3</div>
-        <div class="carousel-cell">slide4</div>
-        <div class="carousel-cell">slide5</div>
-     </div>
+    <p>
+      View:
+      <a href="#carousel-cell1">Cell 1</a>,
+      <a href="#carousel-cell2">Cell 2</a>,        
+      <a href="#carousel-cell3">Cell 3</a>,
+      <a href="#carousel-cell4">Cell 4</a>,        
+      <a href="#carousel-cell5">Cell 5</a>
+    </p>             
+    <div class="main-carousel" data-flickity='{ "pageDots": false }'>
+       <div class="carousel-cell"  id="carousel-cell1" style="background-image:url('images/fiordland.jpg');">
+            <div class="container" >
+                <h2>New Zeland-Fiordland</h2>
+            </div>
+        </div>
+        <div class="carousel-cell" id="carousel-cell2" style="background-image:url('images/islandia.jpg');">
+            <div class="container">
+                <h2>Island-Waterfalls</h2>
+            </div>
+        </div>
+        <div class="carousel-cell" id="carousel-cell3" style="background-image:url('images/koryska.jpeg');">
+            <div class="container">
+                <h2>France-Corsica</h2>
+            </div>
+        </div>
+        <div class="carousel-cell" id="carousel-cell4" style="background-image:url('images/ouro preto.jpg');">
+            <div class="container">
+                <h2>Brazil-Ouro Preto</h2>
+            </div>
+        </div>
+        <div class="carousel-cell" id="carousel-cell5" style="background-image:url('images/cerro_torre_laguna_torre.jpg');">
+            <div class="container">
+                <h2>Argentina-Torre del Paine</h2>
+            </div>
+        </div>
+        <div class="progress-bar"></div>
+    </div>
+    <button class="restart">Restart</button>
 <script src="vendor/flickity.pkgd.min/flickity.pkgd.min.js"></script>
+<script src="js/hash.js"></script>
 <script src="js/script.js"></script> 
 </body>
 </html>
