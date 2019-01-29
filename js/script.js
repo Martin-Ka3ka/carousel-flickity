@@ -8,7 +8,7 @@ var flkty = new Flickity(elem, {
     hash: true,
 });
 
-var flkty = new Flickity('.main-carousel');
+
 
 var progressBar = document.querySelector('.progress-bar');
 
