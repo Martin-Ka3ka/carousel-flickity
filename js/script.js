@@ -9,7 +9,6 @@ var flkty = new Flickity(elem, {
 });
 
 
-
 var progressBar = document.querySelector('.progress-bar');
 
 flkty.on('scroll', function (progress) {
