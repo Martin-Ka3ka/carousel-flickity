@@ -20,34 +20,48 @@
     </p>
     <div class="progress-bar"></div>   
     <div class="main-carousel" >
-        <div class="carousel-cell"  id="carousel-cell1" style="background-image:url('images/fiordland.jpg');">
-            <div class="container" >
-                <h2>New Zeland-Fiordland</h2>
-            </div>
+       <script id="template" type="x-tmpl-mustache">
+       <div class="carousel-cell" id="{{id}}" style="background-image: url({{image}})">
+           <div class="container">
+            <h2>{{content}}</h2>
+           </div>
         </div>
-        <div class="carousel-cell" id="carousel-cell2" style="background-image:url('images/islandia.jpg');">
-            <div class="container">
-                <h2>Island-Waterfalls</h2>
-            </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell3" style="background-image:url('images/koryska.jpeg');">
-            <div class="container">
-                <h2>France-Corsica</h2>
-            </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell4" style="background-image:url('images/ouro preto.jpg');">
-            <div class="container">
-                <h2>Brazil-Ouro Preto</h2>
-            </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell5" style="background-image:url('images/cerro_torre_laguna_torre.jpg');">
-            <div class="container">
-                <h2>Argentina-Torre del Paine</h2>
-            </div>
-        </div>
-      </div>
+    </script>   
+    <script>   
+        
+            var slides = [
+            {
+                id:"carousel-cell1",
+                image:'images/fiordland.jpg',
+                content:'New Zeland-Fiordland'
+            },
+            {
+                id:"carousel-cell2",
+                image:'images/islandia.jpg',
+                content:'Island-Waterfalls'
+            },
+            {
+                id:"carousel-cell3",
+                image:'images/koryska.jpeg',
+                content:'France-Corsica'
+            },
+            {
+                id:"carousel-cell4",
+                image:'images/ouro preto.jpg',
+                content:'Brazil-Ouro Preto'
+            },
+            {
+                id:"carousel-cell5",
+                image:'images/cerro_torre_laguna_torre.jpg',
+                content:'Argentina-Torre del Paine'
+            },
+            ];
+        </script>     
+    
+    </div> 
     <button class="restart">Restart</button>
 <script src="vendor/flickity.pkgd.min/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
 <script src="js/script.js"></script> 
 </body>
 </html>
