@@ -28,40 +28,45 @@
         </div>
     </script>   
     <script>   
-        
-            var slides = [
+        var slides = [
             {
                 id:"carousel-cell1",
                 image:'images/fiordland.jpg',
-                content:'New Zeland-Fiordland'
+                content:'New Zeland-Fiordland',
+                coords:{lat: -44.691946, lng: 169.175575}
             },
             {
                 id:"carousel-cell2",
                 image:'images/islandia.jpg',
-                content:'Island-Waterfalls'
+                content:'Island-Waterfalls',
+                coords:{lat:65.812679, lng:-16.382574}
             },
             {
                 id:"carousel-cell3",
                 image:'images/koryska.jpeg',
-                content:'France-Corsica'
-            },
+                content:'France-Corsica',
+                coords:{lat: 42.381070, lng: 8.945931}
+            },  
             {
                 id:"carousel-cell4",
                 image:'images/preto.jpg',
-                content:'Brazil-Ouro Preto'
+                content:'Brazil-Ouro Preto',
+                coords:{lat:-20.382510, lng:-43.503578}
             },
             {
                 id:"carousel-cell5",
                 image:'images/cerro_torre_laguna_torre.jpg',
-                content:'Argentina-Torre del Paine'
+                content:'Argentina-Torre del Paine',
+                coords:{lat: -49.273215, lng:-72.987055}
             },
             ];
         </script>     
-    
     </div> 
     <button class="restart">Restart</button>
+    <div id="map" class="map"></div>
 <script src="vendor/flickity.pkgd.min/flickity.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
-<script src="js/script.js"></script> 
+<script src="js/script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOnbF1mnBci2DFqzfm5D0gvF_qgxyxi8s&callback=initMap"></script> 
 </body>
 </html>

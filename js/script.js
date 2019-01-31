@@ -35,3 +35,46 @@ restart.addEventListener('click', function () {
     var flkty = new Flickity('.main-carousel');
     flkty.select(0);
 })
+
+/*google maps*/
+
+window.initMap = function () {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: slides[0].coords,
+        zoom: 10
+    });
+    var markers = [];
+    for (var i = 0; i < slides.length; i++) {
+        markers[i] = new google.maps.Marker({
+            position: slides[i].coords,
+            map: map,
+            
+        });
+        document.getElementById('map').addEventListener('click', function(event){
+			event.preventDefault();
+			
+			map.panTo(map);
+			
+			
+			map.setZoom(14);
+		});
+    }
+      
+    
+};      
+ /*           
+       
+var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 7,
+    center: uluru
+});
+
+var markerOne = new google.maps.Marker({
+    position: uluru,
+    map: map
+});
+
+var markerTwo = new google.maps.Marker({
+    position: sydney,
+    map: map
+});*/
